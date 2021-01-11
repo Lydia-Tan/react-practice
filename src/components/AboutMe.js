@@ -1,5 +1,5 @@
 import React from "react";
-//about me section detail
+//about me section
 
 function AboutMe(){
  

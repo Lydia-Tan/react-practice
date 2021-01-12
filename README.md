@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# :seedling: Learning and Practicing React :seedling:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+While following alongside a video, I'm trying to complete the practice exercises, customize my own little tidbits along the way, and better understand Git and Github while working through this mini project!
 
-## Available Scripts
+***
 
-In the project directory, you can run:
+### Goals :mushroom: 
 
-### `npm start`
+- [ ] Commit everyday
+- [ ] Complete the video and its exercises
+- [ ] Better understand Github
+- [ ] Better understand Git
+- [x] ~~Have fun with the finetuning and additional features~~
+- [ ] Practice writing commit messages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Personal logs:
+>1/12/2021
+So far, I've learned a little bit more with README formatting and I've been getting a better understanding of some of the git commands. i've taken notes reading through branches and pull and push requests (what they really mean). I've also worked through some of the basic exercises with creating props and components in React. I messed up my commit history yesterday but I restored the current code state (missing the commits, though :disappointed:)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+>update: 
+I've also only realized now that I need to write the README updates into this local README file in order for it to save these changes when I push to the repo. This is my second time retyping this (oops) because I was actually modifying the README.md file in Github but not here so each time I pushed changes to Github, it would push the old, default README.md file and override the one I had written in Github which is why I had to rewrite this README.md again. But hopefully now, I've identified and solved the issue and won't need to rewrite this file LOL

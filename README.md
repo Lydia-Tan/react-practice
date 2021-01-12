@@ -6,7 +6,7 @@ I'm trying to complete some practice exercises, customize my own little tidbits 
 
 ### Goals :mushroom: 
 
-- [ ] Complete the video and its exercises
+- [ ] Complete exercises
 - [ ] Gain a better understanding w/ Github
 - [ ] Gain a better understanding w/ Git
 - [x] ~~Have fun with the finetuning and additional features~~

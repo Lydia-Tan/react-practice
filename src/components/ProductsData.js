@@ -1,4 +1,4 @@
-const products = [
+const productsData = [
     {
         id: "1",
         name: "Pencil",
@@ -47,5 +47,5 @@ const products = [
         price: 14.99,
         description: "To prove to other devs you know a lot"
     }
-    ]
-export default products
+]
+export default productsData

@@ -6,10 +6,18 @@ import AboutMe from "./components/AboutMe.js";
 import Header from "./components/Header.js";
 import ToDo from "./components/ToDo";
 import TimeGreeting from "./components/TimeGreeting";
+
 import Joke from "./components/Joke";
 import jokesData from "./components/JokesData";
+import Products from "./components/Products.js";
+import productsData from "./components/ProductsData.js";
 
 function App() {
+  const allProds = productsData.map(prod =>
+    // <Products key={prod.id}/>
+    <Products key={prod.id} name={prod.name} price={prod.price} description={prod.description}/>
+
+  ) 
 
   //because map returns a new array, we are creating a variable jokecomponent which stores the new array
   const jokeComponents = jokesData.map(joke => 
@@ -23,8 +31,13 @@ function App() {
       <TimeGreeting />
 
       <div>
+        {allProds}
+      </div> 
+
+      <div>
         {jokeComponents}
       </div>
+
       {/* <Joke 
         answer="It's hard to explain puns to kleptomaniacs because they always take things literally."   
       />

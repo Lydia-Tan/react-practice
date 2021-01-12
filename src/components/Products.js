@@ -1,5 +1,4 @@
 import React from "react";
-import products from "./ProductsData";
 
 // here is where I try to pass in the values from the products data file and then attempt to pass each of those properties into an html element (maybe like product cards, etc)
 
@@ -9,12 +8,15 @@ function Products(props){
     //incorrect --> this stuff that I'm trying to do is meant to be executed in the App.js file, not here
     // const allProds = products.map(function() =>
     // return()
-    // )
-
-    <div>
-        <h3>{props.name}</h3>
-        <h4>${props.price}</h4>
-        <p>description: {props.description}</p>
-    </div>
+    // )   
+    return(
+        <div>
+            {/* <h2>testing</h2> */}
+            <h3>{props.name}</h3>
+            <h4>money: {props.price}</h4>
+            <p>description: {props.description}</p>
+            <hr/>
+        </div>
+    )
 }
 export default Products;

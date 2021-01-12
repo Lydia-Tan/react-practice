@@ -11,10 +11,19 @@ function Products(props){
     // )   
     return(
         <div>
-            {/* <h2>testing</h2> */}
-            <h3>{props.name}</h3>
+            {/* first implementation method: */}
+            
+            {/* <h3>{props.name}</h3>
             <h4>money: {props.price}</h4>
             <p>description: {props.description}</p>
+            <hr/>  */}
+            
+            {/* tests: when I commented this chunk out and implemented it using the second method, the program runs no errors but does not recognize the assigned properties of .price and .description or .name from the products data javascript data file. It outputs to the screen just h4 tags but doesn't recognize the js object props.price */}
+
+            {/*second implementation method: */}
+            <h3>{props.item.name}</h3>
+            <h4>price: ${props.item.price}</h4>
+            <p>description: {props.item.description}</p>
             <hr/>
         </div>
     )

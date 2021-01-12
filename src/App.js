@@ -14,8 +14,11 @@ import productsData from "./components/ProductsData.js";
 
 function App() {
   const allProds = productsData.map(prod =>
-    // <Products key={prod.id}/>
-    <Products key={prod.id} name={prod.name} price={prod.price} description={prod.description}/>
+    //first variation of implementing:
+    // <Products key={prod.id} name={prod.name} price={prod.price} description={prod.description}/>
+    
+    //second variation of implementing:
+    <Products key={prod.id} item={prod}/>
 
   ) 
 

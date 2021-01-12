@@ -9,8 +9,12 @@ Here, I am working on an additional (and somewhat separate) project within the m
 - Hard-coded to-do list items
 
 ### Phase 2 :bee:
-- Styling (copy-paste, I plan to do a more in depth learning practice with CSS later)
 - Create separate component called TodoItem that contains the hardcoded to-do list items 
 
 ### Phase 3 :bee:
-- currently here!
+- Create data file that contains the to do items and assigns values to the task objects
+- Implement and display each of the to-do components
+- Have the checkboxes change (be checked off) in accordance to the completed boolean value assignment
+
+### Phase 4 :bee:
+- In progress...

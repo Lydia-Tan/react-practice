@@ -15,9 +15,18 @@ import productsData from "./components/ProductsData.js";
 
 //the use of extends essentially allows for us to use all of the React.Component "goodies" to be used in this class
 class App extends React.Component{
+  constructor(){
+    //always add the super() method into the constructor
+    super();
+    //this.state will always be set to equal some object
+    this.state = {
+      mood: "determined!"
+    }
+  }
+
   yourMethod(){
     return(
-    <h2>THIS IS SO COOL</h2>
+    <h2>My mood right now is: {this.state.mood}</h2>
     )
   }
   //needs at least one method (render() method)

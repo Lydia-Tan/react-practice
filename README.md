@@ -19,4 +19,4 @@ I'm trying to complete some practice exercises, customize my own little tidbits 
 So far, I've learned a little bit more with README formatting and I've been getting a better understanding of some of the git commands. i've taken notes reading through branches and pull and push requests. I've also worked through some of the basic exercises with creating props and components in React. I messed up my commit history yesterday but I restored the current code state (missing the commits, though :disappointed:)
 
 >1/13/2021 
-Created an app class, reviewed classes and constructors in JavaScript and displayed a simple sample component state.
+Created an app class, reviewed classes and constructors in JavaScript and displayed a simple sample component state. Many of my commits from today and yesterday don't seem to be showing up...

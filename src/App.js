@@ -13,34 +13,37 @@ import React from "react";
 // import productsData from "./components/ProductsData.js";
 
 
-
-class App extends React.Component {
+class App extends React.Component{
   constructor(){
     super();
     this.state = {
-      login: true
+      counter: 0
     }
+    this.handleClicks = this.handleClicks.bind(this);
+  } 
+
+  handleClicks(){
+    this.setState(function(prevState){
+        return{
+          counter: prevState.counter + 1
+        }
+      }
+    )
   }
-
-
 
   render(){
-    let wordDisplay
-    if(this.state.login === true){
-      wordDisplay = "in";
-    }
-    else{
-      wordDisplay = "out";
-    }
-    return (
+    return(
       <div>
-          <h1>You are currently logged {wordDisplay}</h1>
+        <h3>Cookie clicker but without the cookie LOL</h3>
+        <h1>{this.state.counter}</h1>
+        <button onClick = {this.handleClicks}>Click here!</button>
       </div>
-  )
+    )
+  
   }
   
-}
 
+}
 
 
 

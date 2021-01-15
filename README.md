@@ -20,3 +20,6 @@ So far, I've learned a little bit more with README formatting and I've been gett
 
 >1/13/2021 
 Created an app class, reviewed classes and constructors in JavaScript and displayed a simple sample component state. Many of my commits from today and yesterday don't seem to be showing up...
+
+>1/14/2021
+Working with modifying and changing object states. I created a faux cookie clicker for practice and I have also seemingly fixed yesterday's issue with my commits now properly showing up as they should. Made some progress with the to-do page as well. Also learned to add gifs to README's -- the possibilities now haha

@@ -17,4 +17,10 @@ Here, I am working on an additional (and somewhat separate) project within the m
 - Have the checkboxes change (be checked off) in accordance to the completed boolean value assignment
 
 ### Phase 4 :bee:
-- In progress...
+- Passed the to-do items to be a state object in the class constructor
+- Added a console log interaction where the checkboxes could be clicked (state still unchanged) and a console message would result
+
+### Phase 5 :bee: 
+LOADING...
+![loading...](https://static.demilked.com/wp-content/uploads/2016/06/gif-animations-replace-loading-screen-14.gif)
+

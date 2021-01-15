@@ -21,11 +21,36 @@ class App extends React.Component{
     </div>
   }
 }
+
+ 
+/* alternatively: 
+class App extends React.Component{
+  constructor(){
+    super()
+   
+    this.state = {
+      taskList: toDoData 
+    }
+  }
+
+  render(){
+    const toDoItems = this.state.taskList.map(taskItem =>
+      <ToDoItem key = {item.id} itemDo = {taskItem}  
+    )
+    return <div className = "App">
+      {toDoItems}
+    </div>
+   }
+ } 
+ */
+
+
 // function App() {
 //   const toDoComponent = toDoData.map(
 //     taskItem =>
 //     <ToDoItem key={taskItem.id} itemDo={taskItem}/>  
 //   )
+    
 //   return (
 //     <div className="App">
 //       {toDoComponent}

@@ -1,45 +1,48 @@
 import './App.css';
 import React from "react";
 
-import Footer from "./components/Footer";
-import AboutMe from "./components/AboutMe.js";
-import Header from "./components/Header.js";
-import ToDo from "./components/ToDo";
-import TimeGreeting from "./components/TimeGreeting";
+// import Footer from "./components/Footer";
+// import AboutMe from "./components/AboutMe.js";
+// import Header from "./components/Header.js";
+// import ToDo from "./components/ToDo";
+// import TimeGreeting from "./components/TimeGreeting";
 
-import Joke from "./components/Joke";
-import jokesData from "./components/JokesData";
-import Products from "./components/Products.js";
-import productsData from "./components/ProductsData.js";
+// import Joke from "./components/Joke";
+// import jokesData from "./components/JokesData";
+// import Products from "./components/Products.js";
+// import productsData from "./components/ProductsData.js";
 
 
-//the use of extends essentially allows for us to use all of the React.Component "goodies" to be used in this class
-class App extends React.Component{
+
+class App extends React.Component {
   constructor(){
-    //always add the super() method into the constructor
     super();
-    //this.state will always be set to equal some object
     this.state = {
-      mood: "determined!"
+      login: true
     }
   }
 
-  yourMethod(){
-    return(
-    <h2>My mood right now is: {this.state.mood}</h2>
-    )
-  }
-  //needs at least one method (render() method)
+
+
   render(){
-    const tester = this.yourMethod();
-    return(
+    let wordDisplay
+    if(this.state.login === true){
+      wordDisplay = "in";
+    }
+    else{
+      wordDisplay = "out";
+    }
+    return (
       <div>
-        {tester}
-        <AboutMe/>
-      </div> 
-    )
+          <h1>You are currently logged {wordDisplay}</h1>
+      </div>
+  )
   }
+  
 }
+
+
+
 
 // function App() {
 //   const allProds = productsData.map(prod =>

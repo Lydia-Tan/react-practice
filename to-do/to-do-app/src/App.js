@@ -8,14 +8,23 @@ class App extends React.Component{
   constructor(){
     super()
     let toDoItem = toDoData.map(taskItem => 
-    <ToDoItem key = {taskItem.id} itemDo = {taskItem}/>
+    <ToDoItem key = {taskItem.id} itemDo = {taskItem} handleChange = {this.handleChange}/>
     )
     this.state = {
       taskList: toDoItem 
     }
+    this.handleChange=  this.handleChange.bind(this);
   }
 
-  render(){
+  handleChange(id){
+    console.log(id, "changed")
+    // this.setState(function(prevState){
+
+    // })
+  }
+
+
+  render(){ 
     return <div className = "App">
       {this.state.taskList}
     </div>

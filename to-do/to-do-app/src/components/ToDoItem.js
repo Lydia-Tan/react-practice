@@ -10,10 +10,7 @@ function ToDoItem(props){
                 onChange = {() => props.handleChange(props.itemDo.id)} 
             />
 
-            <label>{props.itemDo.task}</label>
-            <br/>
-            <br/>
-
+            <p>{props.itemDo.task}</p>
         </div>
     )
 

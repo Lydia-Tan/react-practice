@@ -15,30 +15,28 @@ class App extends React.Component{
 
   handleChange(id){
     this.setState(prevState =>{
-      let updatedCheckbox = prevState.taskList.map(taskItems =>{
-        if(taskItems.id === id){
-          taskItems.completed = !taskItems.completed;
-          console.log(taskItems)
+      const updatedCheckbox = prevState.taskList.map(todo =>{
+        if(todo.id === id){
+          return {todo, completed:!todo.completed}
         }
-        return taskItems
+        return todo
       })
       return{
         taskList: updatedCheckbox
       }
     })
-    console.log(id, "changed")
  
   }
 
 
   render(){ 
-    let toDoItem = this.state.taskList.map(taskItem => 
-      <ToDoItem key = {taskItem.id} itemDo = {taskItem} handleChange = {this.handleChange}/>
-      )
-    return <div className = "App">
-      {toDoItem}
-    </div>
-  }
+    const toDoItem = this.state.taskList.map((taskItem) => 
+      <ToDoItem key = {taskItem.id} itemDo = {taskItem} handleChange = {this.handleChange}/>)
+    return (
+      <div>      {toDoItem}
+      </div>
+    )
+}
 }
 
  

@@ -4,7 +4,11 @@ function ToDoItem(props){
     return(
         <div>
             {/* <input type = "checkbox" checked = {props.itemDo.completed} /> */}
-            <input type = "checkbox" checked = {props.itemDo.completed} onChange = {() => props.handleChange(props.itemDo.id)} />
+            <input 
+                type = "checkbox" 
+                checked = {props.itemDo.completed} 
+                onChange = {() => props.handleChange(props.itemDo.id)} 
+            />
 
             <label>{props.itemDo.task}</label>
             <br/>

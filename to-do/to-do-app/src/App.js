@@ -7,26 +7,36 @@ import toDoData from "./components/ToDoData";
 class App extends React.Component{
   constructor(){
     super()
-    let toDoItem = toDoData.map(taskItem => 
-    <ToDoItem key = {taskItem.id} itemDo = {taskItem} handleChange = {this.handleChange}/>
-    )
     this.state = {
-      taskList: toDoItem 
+      taskList: toDoData 
     }
-    this.handleChange=  this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(id){
+    this.setState(prevState =>{
+      let updatedCheckbox = prevState.taskList.map(taskItems =>{
+        if(taskItems.id === id){
+          taskItems.completed = !taskItems.completed;
+          console.log(taskItems)
+        }
+        return taskItems
+      })
+      return{
+        taskList: updatedCheckbox
+      }
+    })
     console.log(id, "changed")
-    // this.setState(function(prevState){
-
-    // })
+ 
   }
 
 
   render(){ 
+    let toDoItem = this.state.taskList.map(taskItem => 
+      <ToDoItem key = {taskItem.id} itemDo = {taskItem} handleChange = {this.handleChange}/>
+      )
     return <div className = "App">
-      {this.state.taskList}
+      {toDoItem}
     </div>
   }
 }

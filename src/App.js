@@ -1,5 +1,6 @@
 import './App.css';
 import React from "react";
+import Loading from "./components/Loading.js"
 
 // import Footer from "./components/Footer";
 // import AboutMe from "./components/AboutMe.js";
@@ -17,26 +18,25 @@ class App extends React.Component{
   constructor(){
     super();
     this.state = {
-      counter: 0
+      isLoading: true
     }
-    this.handleClicks = this.handleClicks.bind(this);
   } 
 
-  handleClicks(){
-    this.setState(function(prevState){
-        return{
-          counter: prevState.counter + 1
-        }
-      }
-    )
+  //this lifecycle method runs the code right after the app component mounts onto the screen
+  componentDidMount(){
+    setTimeout(() => {
+      this.setState({
+        isLoading:false
+      })
+      // this 1.5 seconds to run the code in the function as a means of "faking" a load
+    }, 1500)
   }
 
   render(){
     return(
       <div>
-        <h3>Cookie clicker but without the cookie LOL</h3>
-        <h1>{this.state.counter}</h1>
-        <button onClick = {this.handleClicks}>Click here!</button>
+        <h3>This is a rlly bad loading page</h3>
+        <Loading isLoading = {this.state.isLoading}/>
       </div>
     )
   

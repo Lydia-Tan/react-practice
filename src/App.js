@@ -1,33 +1,29 @@
 import './App.css';
 import React from "react";
-import Login from "./components/Login"
 
 class App extends React.Component{
   constructor(){
     super();
     this.state = {
-      userLogged: false
+      character: {}
     }
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   } 
   
-  handleClick(){
-    console.log("work in progress")
-    //change state when clicked
-    this.setState(prevState =>{
-      return{
-        userLogged: !prevState.userLogged
-      }
-    })
+  componentDidMount(){
+    fetch("https://swapi.dev/api/people/1")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          character:data
+        })
+      })
   }
 
   render(){
-    let buttonText = this.state.userLogged ? "Logout" : "Login"
-    let statusText = this.state.userLogged ? "You are currently logged in" : "You are currently logged out"
     return(
       <div>
-        <h3>{statusText}</h3>
-        <button onClick = {this.handleClick}>{buttonText}</button>
+        <h1>{this.state.character.name}</h1>
 
       </div>
     )

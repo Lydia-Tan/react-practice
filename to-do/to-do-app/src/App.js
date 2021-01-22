@@ -15,9 +15,9 @@ class App extends React.Component{
 
   handleChange(id){
     this.setState(prevState =>{
-      const updatedCheckbox = prevState.taskList.map(todo =>{
+      let updatedCheckbox = prevState.taskList.map(todo =>{
         if(todo.id === id){
-          return {todo, completed:!todo.completed}
+          return {key:todo.id, task: todo.task, completed:!todo.completed}
         }
         return todo
       })
@@ -25,15 +25,18 @@ class App extends React.Component{
         taskList: updatedCheckbox
       }
     })
- 
+ console.log(id)
   }
 
 
   render(){ 
-    const toDoItem = this.state.taskList.map((taskItem) => 
+    let toDoItem = this.state.taskList.map(taskItem => 
       <ToDoItem key = {taskItem.id} itemDo = {taskItem} handleChange = {this.handleChange}/>)
+      console.log({toDoItem})
+
     return (
-      <div>      {toDoItem}
+      <div>      
+        {toDoItem}
       </div>
     )
 }

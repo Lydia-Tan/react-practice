@@ -23,3 +23,6 @@ Created an app class, reviewed classes and constructors in JavaScript and displa
 
 >1/14/2021
 Working with modifying and changing object states. I created a faux cookie clicker for practice and I have also seemingly fixed yesterday's issue with my commits now properly showing up as they should. Made some progress with the to-do page as well. Also learned to add gifs to README's -- the possibilities now haha
+
+>1/23/2021 
+Learned how to edit component states and implement separate methods and functions. Progress nearly on pause because of classes starting again!
